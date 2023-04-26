@@ -27,3 +27,38 @@ blockchain = [
 # Anthony's KelloggCoin balance is 2650
 
 # 👇👇👇 Your code HERE 👇👇👇
+
+#goal is to have 4 individual balances (4 individual balances)
+
+ben_KC_balance = 0
+brian_KC_balance = 0
+evan_KC_balance = 0
+anthony_KC_balance = 0
+
+#can think about the "to" being an added value to the receiver and "from" being subtracted value 
+if 
+  transaction["from_user"] == "ben"
+  ben_KC_balance == ben_KC_balance - ["amount"]
+elsif transaction["from_user"] == "evan"
+  evan_KC_balance == evan_KC_balance - ["amount"]
+elsif transfaction["from_user"] == brian
+  brian_KC_balance  == brian_KC_balance - ["amount"]
+elsif transaction["from_user"] == anthony 
+  anthony_KC_balance == anthony_KC_balance - ["amount"]
+end
+
+if transaction["to_user"] == "ben"
+  ben_KC_balance == ben_KC_balance + ["amount"]
+elsif transaction["to_user"] == "evan"
+  evan_KC_balance == evan_KC_balance + ["amount"]
+elsif transfaction["to_user"] == brian
+  brian_KC_balance == brian_KC_balance + ["amount"]
+elsif transaction["to_user"] == anthony 
+  anthony_KC_balance == anthony_KC_balance + ["amount"]
+end
+end
+
+puts "Ben's KelloggCoin balance is #{ben_KC_balance}"
+puts "Brian's KelloggCoin balance is #{brian_KC_balance}"
+puts "Evan's KelloggCoin balance is #{evan_KC_balance}"
+puts "Anthony's KelloggCoin balance is #{anthony_KC_balance}"
